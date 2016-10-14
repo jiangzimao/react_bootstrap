@@ -6,10 +6,10 @@ import * as Fun from '../constants/Fun'
 class App extends React.Component {
 
     componentDidMount () {
-        Fun.resizeWin()
         Fun.initShortcut()
         this.props.bindShortcut(['right','tab'], Fun.next)
         this.props.bindShortcut('left', Fun.previous)
+        Fun.resizeWin()
     }
 
     componentWillMount() {
